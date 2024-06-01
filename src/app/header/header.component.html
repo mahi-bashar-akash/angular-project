@@ -1,0 +1,68 @@
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/home" (click)="hideCollapse()">
+        Angular
+      </a>
+      <button class="navbar-toggler" type="button" (click)="showCollapse()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-end d-inline-block d-lg-none">
+            <button type="button" class="btn btn-close border-0 p-3 icon-close" (click)="hideCollapse()"></button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" (click)="hideCollapse()">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="hideCollapse()">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="hideCollapse()">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/blog" routerLinkActive="active" (click)="hideCollapse()">
+              Blog
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/service" routerLinkActive="active" (click)="hideCollapse()">
+              Service
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mahi Bashar Akash
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li class="mb-1">
+                <a class="dropdown-item" routerLink="/profile" routerLinkActive="active" (click)="hideCollapse()">
+                  Profile
+                </a>
+              </li>
+              <li class="mb-1">
+                <a class="dropdown-item" routerLink="/settings" routerLinkActive="active" (click)="hideCollapse()">
+                  Settings
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
