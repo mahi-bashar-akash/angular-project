@@ -1,0 +1,15 @@
+$loop-limit: 1200;
+
+$pixel-value: 1px;
+
+@for $i from 1 through $loop-limit {
+
+  .width-#{$i} {
+    width: $pixel-value * $i !important;
+  }
+
+  .height-#{$i} {
+    height: $pixel-value * $i !important;
+  }
+
+}
