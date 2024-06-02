@@ -1,0 +1,25 @@
+/* Google font *-*-*-* Dosis *-*-*-* website url link */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+/* Root *-*-*-* color, font, background *-*-*-* global uses */
+
+:root {
+  --theme: #ff2660;
+  --dark-theme: #c03855;
+  --light-gray: #6c757d;
+  --lightest-gray: #efeff3;
+  --font-family: "Dosis", sans-serif;
+  --font-style-normal: normal;
+  --font-size: 14px;
+  --linear-gradient: linear-gradient(127deg, #121e48c9 33%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Body *-*-*-* font family, size, weight *-*-*-* global uses */
+
+body {
+  font-family: var(--font-family) !important;
+  font-style: var(--font-style-normal) !important;
+  font-size: var(--font-size) !important;
+  font-weight: 600 !important;
+}
