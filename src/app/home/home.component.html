@@ -1,10 +1,216 @@
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
-<div class="vh-100"></div>
+<!-- Hero content -->
+<section class="w-100 bg-white" id="resume">
+  <div class="container">
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+
+      <div>
+        <div class="fs-1 mb-3">HI, I'M Mahi Bashar Akash!</div>
+        <div class="fs-6 text-secondary mb-3 col-xl-6">
+          I'm a passionate Web Development with a mission to create delightful and intuitive digital experiences.
+          With a strong foundation in development principles and a keen eye for detail, I specialize in translating
+          complex ideas into user-friendly interfaces that captivate and engage.
+        </div>
+        <div class="d-flex justify-content-start align-items-center gap-3">
+          <button type="button" class="btn btn-theme px-5 py-3">
+            Download CV <i class="bi bi-download ms-2"></i>
+          </button>
+          <button type="button" class="btn btn-none px-5 py-1">
+            <span class="d-flex justify-content-center align-items-center">
+              <span class="d-flex justify-content-center align-items-center rounded-circle width-45 height-45 bg-theme">
+                <i class="bi bi-play-fill text-white fs-4"></i>
+              </span>
+              <span class="ms-2">
+                Watch The Video
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About content -->
+<section class="w-100 bg-white" id="about">
+  <div class="container">
+
+    <div class="text-theme fs-6 mb-3">
+      ABOUT ME
+    </div>
+
+    <div class="text-light-gray mb-3 fs-4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque, ducimus itaque magnam officia possimus
+      quos! Accusamus asperiores atque culpa dicta dignissimos,
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Company Name:
+            </div>
+            <div class="text-secondary">
+              {{ userCompany }}
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Educational Qualification
+            </div>
+            <div class="text-secondary">
+              {{ userEducationalQualification }}
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Experience in programming Language
+            </div>
+            <div class="text-secondary">
+              {{ userProgrammingExperience }}
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Experience in framework development
+            </div>
+            <div class="text-secondary">
+              {{ userFrameworkDevelopment }}
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Full Name:
+            </div>
+            <div class="text-secondary">
+              {{ userName }}
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Email:
+            </div>
+            <a href="mailto:{{ userEmail }}" class="text-secondary d-block">
+              {{ userEmail }}
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Phone Number:
+            </div>
+            <a href="tel:{{ userPhoneNumber }}" class="text-secondary">
+              {{uniqueNumber}} {{ userPhoneNumber }}
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="fw-semibold mb-1">
+              Present Address:
+            </div>
+            <div class="text-secondary">
+              {{ userPresentAddress }}
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="fw-semibold mb-1">
+              Projects:
+            </div>
+            <div class="text-secondary d-flex justify-content-start align-items-center flex-wrap gap-3">
+              <a href="https://education.thethemeai.com/user/home" class="btn btn-outline-theme rounded-0">
+                Education
+              </a>
+              <a href="https://mimosa.thethemeai.com/user/home" class="btn btn-outline-theme rounded-0">
+                Dress
+              </a>
+              <a href="https://materio.thethemeai.com/home" class="btn btn-outline-theme rounded-0">
+                Food
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+
+        <div class="mb-3">
+          <div class="fw-semibold mb-1">
+            My Ambition
+          </div>
+          <div class="text-secondary">
+            Expert in Full Stack Web Development. Research and development in new journey with experience. Need
+            more experience more of end life with new experience.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="fw-semibold mb-1">
+            My Purpose
+          </div>
+          <div class="text-secondary">
+            Problem solving, use to easy application, provide security from fraud. Business clear vision and mission.
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Content -->
+<section class="w-100 bg-white" id="contact">
+  <div class="container">
+    <div class="vh-100 row justify-content-center align-items-center">
+      <div class="col-lg-7">
+        <form (submit)="contactForm($event)" class="w-100 row">
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" type="text" name="name" [(ngModel)]="contactParam.name" class="form-control" required autocomplete="new-name">
+              <div class="error-report" *ngIf=""> This name field is required </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" name="email" [(ngModel)]="contactParam.email" class="form-control" required autocomplete="new-email">
+              <div class="error-report" *ngIf=""> This email field is required </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input id="subject" type="text" name="subject" [(ngModel)]="contactParam.subject" class="form-control" required autocomplete="new-subject">
+              <div class="error-report" *ngIf=""> This subject field is required </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" [(ngModel)]="contactParam.message" class="form-textarea" cols="30" rows="5" required autocomplete="new-message"></textarea>
+              <div class="error-report" *ngIf=""> This message field is required </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-outline-theme rounded-0">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog content -->
+<section class="vh-100 d-flex justify-content-center align-items-center fs-1" id="blog">
+  Blog
+</section>
+
+<!-- Service Content -->
+<section class="vh-100 d-flex justify-content-center align-items-center fs-1" id="service">
+  Service
+</section>
+
