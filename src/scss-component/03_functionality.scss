@@ -12,4 +12,8 @@ $pixel-value: 1px;
     height: $pixel-value * $i !important;
   }
 
+  .height-calc-#{$i} {
+    height: calc(100vh - ($pixel-value * $i)) !important;
+  }
+
 }

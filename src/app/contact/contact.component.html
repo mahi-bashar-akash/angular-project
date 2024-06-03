@@ -1,0 +1,43 @@
+<section class="w-100 bg-white">
+  <div class="container">
+    <div class="height-calc-70 row justify-content-center align-items-center">
+      <div class="col-lg-7">
+        <form (submit)="contactForm($event)" class="w-100 row">
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" type="text" name="name" [(ngModel)]="contactParam.name" class="form-control" required autocomplete="new-name">
+              <div class="error-report" *ngIf=""> This name field is required </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" name="email" [(ngModel)]="contactParam.email" class="form-control" required autocomplete="new-email">
+              <div class="error-report" *ngIf=""> This email field is required </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input id="subject" type="text" name="subject" [(ngModel)]="contactParam.subject" class="form-control" required autocomplete="new-subject">
+              <div class="error-report" *ngIf=""> This subject field is required </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" [(ngModel)]="contactParam.message" class="form-textarea" cols="30" rows="5" required autocomplete="new-message"></textarea>
+              <div class="error-report" *ngIf=""> This message field is required </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-outline-theme rounded-0">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
