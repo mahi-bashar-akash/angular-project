@@ -69,3 +69,43 @@
   }
 
 }
+
+/* Pagination *-*-*-* global uses */
+
+.front-pagination {
+
+  .page-item {
+    transition: 0.3s all ease-in-out;
+
+    &.active .page-link {
+      transition: 0.3s all ease-in-out;
+      background-color: transparent !important;
+      border: 1px solid transparent !important;
+      color: var(--theme) !important;
+    }
+
+    .page-link {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--light-gray) !important;
+      border: 1px solid transparent !important;
+      margin: 0 5px;
+      border-radius: 0 !important;
+      font-size: 12px;
+      box-shadow: 0 0 0 0 !important;
+
+      &:hover, &:focus, &:active {
+        transition: 0.3s all ease-in-out;
+        background-color: transparent !important;
+        border: 1px solid transparent !important;
+        color: var(--theme) !important;
+      }
+
+    }
+
+  }
+
+}
