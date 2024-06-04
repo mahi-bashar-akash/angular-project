@@ -1,6 +1,7 @@
 $loop-limit: 1200;
 
 $pixel-value: 1px;
+$font-size: 1px;
 
 @for $i from 1 through $loop-limit {
 
@@ -14,6 +15,10 @@ $pixel-value: 1px;
 
   .height-calc-#{$i} {
     height: calc(100vh - ($pixel-value * $i)) !important;
+  }
+
+  .font-size-#{$i} {
+    font-size: $font-size * $i !important;
   }
 
 }

@@ -1,3 +1,41 @@
 .bg-theme {
   background-color: var(--theme);
 }
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.background-effect {
+  transition: 0.5s all ease-in-out;
+
+  &:hover {
+    transition: 0.5s all ease-in-out;
+
+    .visible-effect {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .button-visible {
+      visibility: visible;
+      opacity: 1;
+      left: 0;
+    }
+
+  }
+
+  .visible-effect {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .button-visible {
+    visibility: hidden;
+    opacity: 0;
+    left: -110%;
+    transition: 0.5s all ease-in-out;
+  }
+
+}
