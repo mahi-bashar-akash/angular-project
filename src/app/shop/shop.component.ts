@@ -7,6 +7,4 @@ import {RouterModule} from '@angular/router';
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss'
 })
-export class ShopComponent {
-
-}
+export class ShopComponent {}
