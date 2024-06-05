@@ -115,221 +115,32 @@
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-21.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
+        <!-- product -->
+        <div class="p-2" *ngFor="let item of mostViewProductList">
+          <div class="background-effect">
+            <div class="mb-3">
+              <div class="position-relative overflow-hidden">
+                <img [src]="item.productImage" class="img-fluid object-fit-cover height-350 w-100" alt="{{ item.productName }}">
+                <div class="position-absolute bottom-0 button-visible">
+                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
+                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
+                      <i class="bi bi-cart"></i>
+                    </a>
+                    <a routerLink="/single-product" class="btn btn-theme mx-1">
+                      <i class="bi bi-search"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-22.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
+            <div class="fs-6 fw-bold truncate-to-1-line px-3">
+              {{item.productName}}
+            </div>
+            <div class="text-secondary mt-2 px-3 pb-3">
+              $ {{item.productPrice}}
             </div>
           </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
         </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-23.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-24.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-25.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-26.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-27.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-28.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
 
     </div>
 
@@ -373,11 +184,11 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
       <!-- product -->
-      <div class="p-2">
+      <div class="p-2" *ngFor="let item of latestArrivalProductList">
         <div class="background-effect">
           <div class="mb-3">
             <div class="position-relative overflow-hidden">
-              <img src="/shop/product-20.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
+              <img [src]="item.productImage" class="img-fluid object-fit-cover height-350 w-100" alt="{{ item.productName }}">
               <div class="position-absolute bottom-0 button-visible">
                 <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
                   <a href="javascript:void(0)" class="btn btn-theme mx-1">
@@ -391,199 +202,10 @@
             </div>
           </div>
           <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
+            {{item.productName}}
           </div>
           <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-19.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-18.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-17.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-16.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-15.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-14.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
-          </div>
-        </div>
-      </div>
-
-      <!-- product -->
-      <div class="p-2">
-        <div class="background-effect">
-          <div class="mb-3">
-            <div class="position-relative overflow-hidden">
-              <img src="/shop/product-13.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-              <div class="position-absolute bottom-0 button-visible">
-                <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                  <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                    <i class="bi bi-cart"></i>
-                  </a>
-                  <a routerLink="/single-product" class="btn btn-theme mx-1">
-                    <i class="bi bi-search"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fs-6 fw-bold truncate-to-1-line px-3">
-            Aopo Designs Woolrich Klettersack Backpack
-          </div>
-          <div class="text-secondary mt-2 px-3 pb-3">
-            $122.00
+            $ {{item.productPrice}}
           </div>
         </div>
       </div>
@@ -656,10 +278,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-lg-4 mb-3">
+      <div class="col-md-6 col-lg-4 mb-3" *ngFor="let item of blogList">
         <div class="mb-3">
           <div class="position-relative">
-            <img src="/blogs/blog-10.jpg" class="img-fluid object-fit-cover w-100 height-250" alt="blog 1">
+            <img [src]="item.blogImage" class="img-fluid object-fit-cover w-100 height-250" alt="blog 1">
             <div class="position-absolute top-0 end-0 p-3">
               <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
                 AUG <br> 05
@@ -668,155 +290,13 @@
           </div>
         </div>
         <div class="truncate-to-1-line fw-bold fs-5">
-          Aypi non habent claritatem  insitam.
+          {{item.blogTitle}}
         </div>
         <div class="small text-secondary mt-2 fw-medium">
-          HasTech
+          {{item.blogAuthor}}
         </div>
         <div class="text-secondary text-opacity-75 mt-2 truncate-to-3-line">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda atque deserunt doloremque
-          dolorum ducimus earum excepturi id impedit in, incidunt itaque iure laudantium magni minima nisi
-          non quam repellendus sapiente suscipit tempora ullam voluptatibus?
-        </div>
-        <div class="mt-2">
-          <a routerLink="/single-blog" class="text-decoration-none text-light-gray-hover">
-            Read more...
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-3">
-        <div class="mb-3">
-          <div class="position-relative">
-            <img src="/blogs/blog-09.jpg" class="img-fluid object-fit-cover w-100 height-250" alt="blog 2">
-            <div class="position-absolute top-0 end-0 p-3">
-              <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
-                AUG <br> 08
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="truncate-to-1-line fw-bold fs-5">
-          Aypi non habent claritatem  insitam.
-        </div>
-        <div class="small text-secondary mt-2 fw-medium">
-          HasTech
-        </div>
-        <div class="text-secondary text-opacity-75 mt-2 truncate-to-3-line">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda atque deserunt doloremque
-          dolorum ducimus earum excepturi id impedit in, incidunt itaque iure laudantium magni minima nisi
-          non quam repellendus sapiente suscipit tempora ullam voluptatibus?
-        </div>
-        <div class="mt-2">
-          <a routerLink="/single-blog" class="text-decoration-none text-light-gray-hover">
-            Read more...
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-3">
-        <div class="mb-3">
-          <div class="position-relative">
-            <img src="/blogs/blog-08.jpg" class="img-fluid object-fit-cover w-100 height-250" alt="blog 3">
-            <div class="position-absolute top-0 end-0 p-3">
-              <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
-                AUG <br> 12
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="truncate-to-1-line fw-bold fs-5">
-          Aypi non habent claritatem  insitam.
-        </div>
-        <div class="small text-secondary mt-2 fw-medium">
-          HasTech
-        </div>
-        <div class="text-secondary text-opacity-75 mt-2 truncate-to-3-line">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda atque deserunt doloremque
-          dolorum ducimus earum excepturi id impedit in, incidunt itaque iure laudantium magni minima nisi
-          non quam repellendus sapiente suscipit tempora ullam voluptatibus?
-        </div>
-        <div class="mt-2">
-          <a routerLink="/single-blog" class="text-decoration-none text-light-gray-hover">
-            Read more...
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-3">
-        <div class="mb-3">
-          <div class="position-relative">
-            <img src="/blogs/blog-07.jpg" class="img-fluid object-fit-cover w-100 height-250" alt="blog 1">
-            <div class="position-absolute top-0 end-0 p-3">
-              <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
-                AUG <br> 05
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="truncate-to-1-line fw-bold fs-5">
-          Aypi non habent claritatem  insitam.
-        </div>
-        <div class="small text-secondary mt-2 fw-medium">
-          HasTech
-        </div>
-        <div class="text-secondary text-opacity-75 mt-2 truncate-to-3-line">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda atque deserunt doloremque
-          dolorum ducimus earum excepturi id impedit in, incidunt itaque iure laudantium magni minima nisi
-          non quam repellendus sapiente suscipit tempora ullam voluptatibus?
-        </div>
-        <div class="mt-2">
-          <a routerLink="/single-blog" class="text-decoration-none text-light-gray-hover">
-            Read more...
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-3">
-        <div class="mb-3">
-          <div class="position-relative">
-            <img src="/blogs/blog-06.jpg" class="img-fluid object-fit-cover w-100 height-250" alt="blog 2">
-            <div class="position-absolute top-0 end-0 p-3">
-              <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
-                AUG <br> 08
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="truncate-to-1-line fw-bold fs-5">
-          Aypi non habent claritatem  insitam.
-        </div>
-        <div class="small text-secondary mt-2 fw-medium">
-          HasTech
-        </div>
-        <div class="text-secondary text-opacity-75 mt-2 truncate-to-3-line">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda atque deserunt doloremque
-          dolorum ducimus earum excepturi id impedit in, incidunt itaque iure laudantium magni minima nisi
-          non quam repellendus sapiente suscipit tempora ullam voluptatibus?
-        </div>
-        <div class="mt-2">
-          <a routerLink="/single-blog" class="text-decoration-none text-light-gray-hover">
-            Read more...
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-3">
-        <div class="mb-3">
-          <div class="position-relative">
-            <img src="/blogs/blog-05.jpg" class="img-fluid object-fit-cover w-100 height-250" alt="blog 3">
-            <div class="position-absolute top-0 end-0 p-3">
-              <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
-                AUG <br> 12
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="truncate-to-1-line fw-bold fs-5">
-          Aypi non habent claritatem  insitam.
-        </div>
-        <div class="small text-secondary mt-2 fw-medium">
-          HasTech
-        </div>
-        <div class="text-secondary text-opacity-75 mt-2 truncate-to-3-line">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda atque deserunt doloremque
-          dolorum ducimus earum excepturi id impedit in, incidunt itaque iure laudantium magni minima nisi
-          non quam repellendus sapiente suscipit tempora ullam voluptatibus?
+          {{item.blogDescription}}
         </div>
         <div class="mt-2">
           <a routerLink="/single-blog" class="text-decoration-none text-light-gray-hover">
