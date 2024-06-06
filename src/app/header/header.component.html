@@ -13,11 +13,6 @@
             <button type="button" class="btn btn-close border-0 p-3 icon-close" (click)="hideCollapse()"></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/home" routerLinkActive="active" (click)="hideCollapse()">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="hideCollapse()">
               About
             </a>
@@ -37,6 +32,11 @@
               Shop
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" (click)="hideCollapse()">
+              Wishlist (03)
+            </a>
+          </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -53,6 +53,55 @@
             <a class="nav-link" href="javascript:void(0)" (click)="hideCollapse()">
               Cart (03)
             </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Currency
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="bi bi-currency-euro me-1"></i> Euro
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="bi bi-currency-pound me-1"></i> Pound Sterling
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="bi bi-currency-dollar me-1"></i> US Doller
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  English
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  Bangla
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  Arabic
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  French
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

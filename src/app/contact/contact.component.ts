@@ -13,7 +13,7 @@ import {RouterModule} from '@angular/router';
 export class ContactComponent {
 
   email: string = 'mahibashar2023@gmail.com';
-  phone: string = '+880 01645820007';
+  phone: string = '01645820007';
   address: string = 'Mollapara Bashtola, Jessore Sadar, Jessore, Bangladesh';
 
   contactParam = {
