@@ -1,0 +1,119 @@
+
+<!-- Breadcrumb -->
+<section class="py-5 w-100 bg-white">
+  <div class="container">
+    <div class="bg-light mb-4 height-300 w-100 d-flex justify-content-center align-items-center flex-column breadcrumb-content">
+      <div class="fs-4 fw-medium text-center mb-2">
+        Wishlist
+      </div>
+      <div class="d-flex justify-content-center align-items-center fw-medium">
+        <a routerLink="/home" class="text-decoration-none text-dark mx-1">
+          Home
+        </a>
+        <div class="mx-2">
+          <i class="bi bi-dash-lg"></i>
+        </div>
+        <a routerLink="/wishlist" class="text-decoration-none text-theme mx-1">
+          Wishlist
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wishlist -->
+<section class="py-5 w-100 bg-white">
+  <div class="container">
+    <div class="table-responsive scrollbar">
+      <table class="table align-middle table-bordered">
+        <thead>
+        <tr class="text-center">
+          <th>
+            <div class="min-width-150 p-3">
+              Product Image
+            </div>
+          </th>
+          <th>
+            <div class="min-width-150 p-3">
+              Product Name
+            </div>
+          </th>
+          <th>
+            <div class="min-width-150 p-3">
+              Product Price
+            </div>
+          </th>
+          <th>
+            <div class="min-width-150 p-3">
+              Product Quantity
+            </div>
+          </th>
+          <th>
+            <div class="min-width-150 p-3">
+              Total Amount
+            </div>
+          </th>
+          <th>
+            <div class="min-width-150 p-3">
+              Action
+            </div>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let cartItem of [1,2,3]">
+          <td>
+            <div class="min-width-150 d-flex justify-content-center">
+              <img src="/shop/product-07.jpg" class="width-120 height-120 img-fluid object-fit-contain" alt="product">
+            </div>
+          </td>
+          <td>
+            <div class="min-width-150 p-3 text-center">
+              product name 1
+            </div>
+          </td>
+          <td>
+            <div class="min-width-150 p-3 text-center">
+              $100
+            </div>
+          </td>
+          <td>
+            <div class="min-width-150 p-3 d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-light width-45 height-45 rounded-0">
+                <i class="bi bi-dash-lg"></i>
+              </button>
+              <input type="text" name="quantity" class="form-control width-45 height-45" required autocomplete="new-quantity" value="1">
+              <button type="button" class="btn btn-light width-45 height-45 rounded-0">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+          </td>
+          <td>
+            <div class="min-width-150 p-3 text-center">
+              $100
+            </div>
+          </td>
+          <td>
+            <div class="min-width-150 p-3 d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-outline-danger width-45 height-45 rounded-0">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- confirm cart -->
+<section class="w-100 pb-5">
+  <div class="container">
+    <div class="d-flex justify-content-end align-items-center">
+      <a routerLink="/cart" class="btn btn-outline-theme rounded-0 py-2 px-4">
+        Checkout Cart
+      </a>
+    </div>
+  </div>
+</section>
