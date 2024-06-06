@@ -27,155 +27,359 @@
   </div>
 </section>
 
-<!-- Single blog -->
+<!-- Single product -->
 <section class="w-100 py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5">
-        <img src="/shop/product-07.jpg" class="img-fluid object-fit-cover" alt="product 07">
-        <div class="row row-cols-4 px-2">
-          <div class="p-1">
-            <img src="/shop/product-08.jpg" class="img-fluid object-fit-cover" alt="product 08">
+      <div class="col-lg-8">
+        <form (submit)="productForm($event)" class="row">
+          <div class="col-lg-5">
+            <img src="/shop/product-07.jpg" class="img-fluid object-fit-cover" alt="product 07">
+            <div class="row row-cols-4 px-2">
+              <div class="p-1">
+                <img src="/shop/product-08.jpg" class="img-fluid object-fit-cover" alt="product 08">
+              </div>
+              <div class="p-1">
+                <img src="/shop/product-09.jpg" class="img-fluid object-fit-cover" alt="product 09">
+              </div>
+              <div class="p-1">
+                <img src="/shop/product-10.jpg" class="img-fluid object-fit-cover" alt="product 10">
+              </div>
+              <div class="p-1">
+                <img src="/shop/product-11.jpg" class="img-fluid object-fit-cover" alt="product 11">
+              </div>
+            </div>
           </div>
-          <div class="p-1">
-            <img src="/shop/product-09.jpg" class="img-fluid object-fit-cover" alt="product 09">
+          <div class="col-lg-7">
+            <div class="fs-5 fw-medium text-light-gray mb-3">
+              <input type="text" [(ngModel)]="productParam.product_name" name="product_name" class="form-control" hidden="hidden">
+              Aopo Designs Woolrich Klettersack Backpack
+            </div>
+            <div class="text-secondary mb-3">
+              <input type="text" [(ngModel)]="productParam.product_price" name="product_price" class="form-control" hidden="hidden">
+              $122.00
+            </div>
+            <div class="text-secondary mb-3">
+              Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate orci augue
+              eu metus. Fusce dictum, nisi et semper ultricies, felis tortor blandit odio, egestas consequat pur..
+            </div>
+            <div class="mb-3">
+              <span class="text-secondary"> Ex Tax: </span>
+              <input type="text" [(ngModel)]="productParam.product_tax" name="product_tax" class="form-control" hidden="hidden">
+              <span class="text-theme"> $20 </span>
+            </div>
+            <div class="mb-3">
+              <span class="text-secondary"> Reward Points: </span>
+              <input type="text" [(ngModel)]="productParam.product_reward_points" name="product_reward_points" class="form-control" hidden="hidden">
+              <span class="text-theme"> 200 </span>
+            </div>
+            <div class="mb-3">
+              <span class="text-secondary"> Brands </span>
+              <input type="text" [(ngModel)]="productParam.product_brand" name="product_brand" class="form-control" hidden="hidden">
+              <span class="text-theme"> Armani </span>
+            </div>
+            <div class="mb-3">
+              <span class="text-secondary"> Product Code: </span>
+              <input type="text" [(ngModel)]="productParam.product_code" name="product_code" class="form-control" hidden="hidden">
+              <span class="text-theme"> PRO082379138 </span>
+            </div>
+            <div class="mb-3">
+              <span class="text-secondary"> Availability: </span>
+              <span class="text-theme"> In Stock </span>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label for="color-availability" class="form-label"> Color Availability </label>
+                  <select name="color-availability" id="color-availability" class="form-select" [(ngModel)]="productParam.product_color_availability">
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="pink">Pink</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="red">Red</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+z                  <label for="size-availability" class="form-label"> Size Availability </label>
+                  <select name="size-availability" id="size-availability" class="form-select" [(ngModel)]="productParam.product_size_availability">
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                    <option value="XL">XL</option>
+                    <option value="XS">XS</option>
+                    <option value="XXL">XXL</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-xl-4 my-3">
+                <button type="submit" class="btn btn-outline-theme w-100 rounded-0"> Buy Now </button>
+              </div>
+              <div class="col-md-6 col-xl-4 my-3">
+                <button type="submit" class="btn btn-outline-gray-theme w-100 rounded-0"> Add To Cart </button>
+              </div>
+              <div class="col-md-6 col-xl-4 my-3">
+                <button type="submit" class="btn btn-outline-theme w-100 rounded-0"> Add To WishList </button>
+              </div>
+            </div>
           </div>
-          <div class="p-1">
-            <img src="/shop/product-10.jpg" class="img-fluid object-fit-cover" alt="product 10">
+        </form>
+        <div class="fw-bold mb-2">Description</div>
+        <div class="text-secondary text-opacity-75">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda atque dolorem doloribus
+          ducimus ea earum eos excepturi expedita facere illo, iste laboriosam maxime mollitia nesciunt quaerat
+          quis quo quod quos ratione reiciendis repellat reprehenderit repudiandae sunt tenetur ullam ut vel,
+          veniam veritatis? Ad alias aliquid architecto assumenda commodi consequatur consequuntur cum dolor
+          excepturi fugit illum laboriosam laborum libero maiores modi, nihil optio placeat quo rerum soluta <br><br>
+          tempora tenetur vel voluptatum. Ab architecto blanditiis consequatur distinctio eligendi explicabo
+          ipsa iste iusto maiores molestiae natus neque nobis porro quaerat quam qui reiciendis repudiandae,
+          sapiente velit voluptate. Ab aspernatur assumenda autem, blanditiis cum dolores doloribus dolorum,
+          error esse et hic in laboriosam magnam modi nihil praesentium quas quibusdam quidem repellendus
+          repudiandae sit ullam vitae. A accusamus animi culpa cumque dicta distinctio dolorum ducimus ea <br><br>
+          eum excepturi illum laboriosam minima numquam odit quia, quidem sit veniam. Ab consequuntur cupiditate
+          ea, in labore placeat recusandae velit voluptates! Amet animi at dolor dolores, hic id neque nesciunt
+          numquam obcaecati odio possimus quas rem sit, tempora voluptas voluptate voluptatem. Ad aliquid
+          architecto culpa dolore dolorem dolores dolorum exercitationem facere impedit iusto, molestias nam
+          nostrum nulla obcaecati perferendis quia quibusdam sapiente similique sit tempore unde ut.
+        </div>
+        <hr class="w-100 my-5">
+        <form (submit)="productReviewForm($event)" class="row mb-4">
+          <div class="col-lg-6">
+            <div class="form-group mb-3">
+              <label for="full-name" class="form-label">Full Name</label>
+              <input id="full-name" type="text" [(ngModel)]="productReviewParam.name" name="full-name" class="form-control" placeholder="( Required )" required autocomplete="new-full-name">
+            </div>
           </div>
-          <div class="p-1">
-            <img src="/shop/product-11.jpg" class="img-fluid object-fit-cover" alt="product 11">
+          <div class="col-lg-6">
+            <div class="form-group mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" [(ngModel)]="productReviewParam.email" name="email" class="form-control" placeholder="( Required )" required autocomplete="new-email">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" [(ngModel)]="productReviewParam.message" name="message" class="form-textarea" cols="30" rows="10" required autocomplete="new-message" placeholder="Write your interest..."></textarea>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-outline-gray-theme rounded-0 width-120">
+              SUBMIT
+            </button>
+          </div>
+        </form>
+        <hr class="w-100 my-5">
+        <div class="mt-3 fw-medium fs-5">
+          3 COMMENTS ON PRAISING PAIN WAS BORN AND I WILL GIVE
+        </div>
+        <div class="py-4 d-flex align-items-start justify-content-start border-bottom">
+          <div>
+            <div class="width-65 height-65 d-flex justify-content-center align-items-center bg-secondary-subtle rounded-3 fw-bold">
+              MB
+            </div>
+          </div>
+          <div class="ms-3">
+            <div class="mb-1 fw-medium fs-5"> Mistaken </div>
+            <div class="mb-2 text-secondary mb-2 small"> August 10, 2022 at 11:09 am </div>
+            <div class="mb-2 text-secondary">
+              mistaken explain to you how all this mistaken idea of denouncing pleas
+              praising pain born and I will give you a complete account of the system
+            </div>
+            <button type="button" class="btn btn-outline-theme py-2 width-96 fw-medium rounded-pill">
+              REPLY
+            </button>
+          </div>
+        </div>
+        <div class="py-4 d-flex align-items-start justify-content-start border-bottom">
+          <div>
+            <div class="width-65 height-65 d-flex justify-content-center align-items-center bg-secondary-subtle rounded-3 fw-bold">
+              JS
+            </div>
+          </div>
+          <div class="ms-3">
+            <div class="mb-1 fw-medium fs-5"> Mistaken </div>
+            <div class="mb-2 text-secondary mb-2 small"> August 10, 2022 at 11:09 am </div>
+            <div class="mb-2 text-secondary">
+              mistaken explain to you how all this mistaken idea of denouncing pleas
+              praising pain born and I will give you a complete account of the system
+            </div>
+            <button type="button" class="btn btn-outline-theme py-2 width-96 fw-medium rounded-pill">
+              REPLY
+            </button>
+          </div>
+        </div>
+        <div class="py-4 d-flex align-items-start justify-content-start border-bottom">
+          <div>
+            <div class="width-65 height-65 d-flex justify-content-center align-items-center bg-secondary-subtle rounded-3 fw-bold">
+              IS
+            </div>
+          </div>
+          <div class="ms-3">
+            <div class="mb-1 fw-medium fs-5"> Mistaken </div>
+            <div class="mb-2 text-secondary mb-2 small"> August 10, 2022 at 11:09 am </div>
+            <div class="mb-2 text-secondary">
+              mistaken explain to you how all this mistaken idea of denouncing pleas
+              praising pain born and I will give you a complete account of the system
+            </div>
+            <button type="button" class="btn btn-outline-theme py-2 width-96 fw-medium rounded-pill">
+              REPLY
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-lg-7">
-        <div class="fs-5 fw-medium text-light-gray mb-3">
-          Aopo Designs Woolrich Klettersack Backpack
-        </div>
-        <div class="text-secondary mb-3">
-          $122.00
-        </div>
-        <div class="text-secondary mb-3">
-          Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate orci augue
-          eu metus. Fusce dictum, nisi et semper ultricies, felis tortor blandit odio, egestas consequat pur..
-        </div>
-        <div class="mb-3">
-          <span class="text-secondary"> Ex Tax: </span>
-          <span class="text-theme"> $100.00 </span>
-        </div>
-        <div class="mb-3">
-          <span class="text-secondary"> Reward Points: </span>
-          <span class="text-theme"> 200 </span>
-        </div>
-        <div class="mb-3">
-          <span class="text-secondary"> Brands </span>
-          <span class="text-theme"> Armani </span>
-        </div>
-        <div class="mb-3">
-          <span class="text-secondary"> Product Code: </span>
-          <span class="text-theme"> Product 1 </span>
-        </div>
-        <div class="mb-3">
-          <span class="text-secondary"> Reward Points: </span>
-          <span class="text-theme"> 400 </span>
-        </div>
-        <div class="mb-3">
-          <span class="text-secondary"> Availability: </span>
-          <span class="text-theme"> In Stock </span>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group mb-3">
-              <label for="color-availability" class="form-label"> Color Availability </label>
-              <select name="color-availability" id="color-availability" class="form-select">
-                <option value="black">Black</option>
-                <option value="blue">Blue</option>
-                <option value="pink">Pink</option>
-                <option value="yellow">Yellow</option>
-                <option value="green">Green</option>
-                <option value="purple">Purple</option>
-                <option value="red">Red</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group mb-3">
-              <label for="size-availability" class="form-label"> Size Availability </label>
-              <select name="size-availability" id="size-availability" class="form-select">
-                <option value="L">L</option>
-                <option value="M">M</option>
-                <option value="S">S</option>
-                <option value="XL">XL</option>
-                <option value="XS">XS</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-md-4">
-            <button type="button" class="btn btn-outline-theme w-100 rounded-0"> Buy Now </button>
-          </div>
-          <div class="col-md-4">
-            <button type="button" class="btn btn-outline-gray-theme w-100 rounded-0"> Add To Cart </button>
-          </div>
-          <div class="col-md-4">
-            <button type="button" class="btn btn-outline-theme w-100 rounded-0"> Add To WishList </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="col-lg-4">
 
-<!-- product description -->
-<section class="w-100 py-5">
-  <div class="container">
-    <div class="fw-bold mb-2">Description</div>
-    <div class="text-secondary text-opacity-75">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda atque dolorem doloribus
-      ducimus ea earum eos excepturi expedita facere illo, iste laboriosam maxime mollitia nesciunt quaerat
-      quis quo quod quos ratione reiciendis repellat reprehenderit repudiandae sunt tenetur ullam ut vel,
-      veniam veritatis? Ad alias aliquid architecto assumenda commodi consequatur consequuntur cum dolor
-      excepturi fugit illum laboriosam laborum libero maiores modi, nihil optio placeat quo rerum soluta <br><br>
-      tempora tenetur vel voluptatum. Ab architecto blanditiis consequatur distinctio eligendi explicabo
-      ipsa iste iusto maiores molestiae natus neque nobis porro quaerat quam qui reiciendis repudiandae,
-      sapiente velit voluptate. Ab aspernatur assumenda autem, blanditiis cum dolores doloribus dolorum,
-      error esse et hic in laboriosam magnam modi nihil praesentium quas quibusdam quidem repellendus
-      repudiandae sit ullam vitae. A accusamus animi culpa cumque dicta distinctio dolorum ducimus ea <br><br>
-      eum excepturi illum laboriosam minima numquam odit quia, quidem sit veniam. Ab consequuntur cupiditate
-      ea, in labore placeat recusandae velit voluptates! Amet animi at dolor dolores, hic id neque nesciunt
-      numquam obcaecati odio possimus quas rem sit, tempora voluptas voluptate voluptatem. Ad aliquid
-      architecto culpa dolore dolorem dolores dolorum exercitationem facere impedit iusto, molestias nam
-      nostrum nulla obcaecati perferendis quia quibusdam sapiente similique sit tempore unde ut.
-    </div>
-    <div class="col-lg-6">
-      <hr class="w-100 my-5">
-      <form class="row mb-4">
-        <div class="col-lg-6">
-          <div class="form-group mb-3">
-            <label for="full-name" class="form-label">Full Name</label>
-            <input id="full-name" type="text" name="full-name" class="form-control" placeholder="( Required )" required autocomplete="new-full-name">
+        <div class="mb-3">
+          <div class="position-relative">
+            <input type="text" name="keyword" class="form-control ps-5" required autocomplete="new-keyword"
+                   placeholder="Search here anything">
+            <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+              <i class="bi bi-search text-light-gray"></i>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="form-group mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" type="email" name="email" class="form-control" placeholder="( Required )" required autocomplete="new-email">
+
+        <div class="border bg-white px-3 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Price range</div>
+          <div class="row">
+            <div class="col-6 p-3">
+              <input type="text" name="min-price" class="form-control" required autocomplete="new-min-price" value="0"
+                     min="0">
+            </div>
+            <div class="col-6 p-3">
+              <input type="text" name="max-price" class="form-control" required autocomplete="new-max-price"
+                     value="100000" max="100000">
+            </div>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="form-group mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" name="message" class="form-textarea" cols="30" rows="10" required autocomplete="new-message" placeholder="Write your interest..."></textarea>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Availability</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            In Stock
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            Out of Stock
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            Coming Soon
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Categories</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Male </span> <span> (02) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Female </span> <span> (05) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Children </span> <span> (10) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Accessories </span> <span> (03) </span>
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Subcategories</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Shirt </span> <span> (02) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Pant </span> <span> (05) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> T-shirt </span> <span> (10) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Coat </span> <span> (03) </span>
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Color</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Red </span> <span> (02) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Blue </span> <span> (05) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Green </span> <span> (10) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Yellow </span> <span> (03) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> White </span> <span> (03) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Black </span> <span> (03) </span>
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 mb-3">
+          <div class="fs-5 fw-medium my-3"> Size</div>
+          <div class="mb-3">
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> L </span> <span> (03) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> M </span> <span> (07) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> S </span> <span> (12) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> XL </span> <span> (09) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> XS </span> <span> (02) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> XXL </span> <span> (08) </span>
+            </label>
           </div>
         </div>
-        <div class="col-lg-12">
-          <button type="submit" class="btn btn-outline-gray-theme rounded-0 width-120">
-            SUBMIT
-          </button>
+
+        <div class="border bg-white px-4 mb-3">
+          <div class="fs-5 fw-medium my-3"> Tags</div>
+          <div class="mb-3">
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Shirt
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Pant
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              T-shirt
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Coat
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Accessories
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Male
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Female
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Kid's
+            </label>
+          </div>
         </div>
-      </form>
+
+      </div>
     </div>
   </div>
 </section>

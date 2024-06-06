@@ -31,10 +31,10 @@
 
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-          <div class="p-3 background-effect">
+          <div class="p-3 background-effect" *ngFor="let item of productList">
             <div class="mb-3">
               <div class="position-relative overflow-hidden">
-                <img src="/shop/product-07.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-02">
+                <img [src]="item.productImage" class="img-fluid object-fit-cover height-350 w-100" alt="product-02">
                 <div class="position-absolute bottom-0 button-visible">
                   <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
                     <a href="javascript:void(0)" class="btn btn-theme mx-1">
@@ -45,277 +45,18 @@
                     </a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-08.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
+                <div class="position-absolute top-0 end-0 p-1">
+                  <button type="button" class="btn border-0">
+                    <i class="bi bi-heart text-theme fs-3"></i>
+                  </button>
                 </div>
               </div>
             </div>
             <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
+              {{item.productName}}
             </div>
             <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-09.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-10.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-11.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-12.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-13.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-14.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-15.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-16.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-17.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
-            </div>
-          </div>
-
-          <div class="p-3 background-effect">
-            <div class="mb-3">
-              <div class="position-relative overflow-hidden">
-                <img src="/shop/product-18.jpg" class="img-fluid object-fit-cover height-350 w-100" alt="product-03">
-                <div class="position-absolute bottom-0 button-visible">
-                  <div class="w-100 d-flex justify-content-start align-items-end ps-3 pb-3">
-                    <a href="javascript:void(0)" class="btn btn-theme mx-1">
-                      <i class="bi bi-cart"></i>
-                    </a>
-                    <a routerLink="/single-product" class="btn btn-theme mx-1">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fs-6 fw-bold truncate-to-1-line px-3">
-              Aopo Designs Woolrich Klettersack Backpack
-            </div>
-            <div class="text-secondary mt-2 px-3 pb-3">
-              $122.00
+              ${{item.productPrice}}
             </div>
           </div>
 

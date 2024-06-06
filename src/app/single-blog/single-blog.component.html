@@ -83,23 +83,23 @@
           explorer of the truth, the master-builder of human happiness.
         </div>
         <hr class="w-100 my-5">
-        <form class="row mb-4">
+        <form (submit)="blogReviewForm($event)" class="row mb-4">
           <div class="col-lg-6">
             <div class="form-group mb-3">
               <label for="full-name" class="form-label">Full Name</label>
-              <input id="full-name" type="text" name="full-name" class="form-control" placeholder="( Required )" required autocomplete="new-full-name">
+              <input id="full-name" type="text" [(ngModel)]="blogReviewParam.name" name="full-name" class="form-control" placeholder="( Required )" required autocomplete="new-full-name">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="form-group mb-3">
               <label for="email" class="form-label">Email</label>
-              <input id="email" type="email" name="email" class="form-control" placeholder="( Required )" required autocomplete="new-email">
+              <input id="email" type="email" [(ngModel)]="blogReviewParam.email" name="email" class="form-control" placeholder="( Required )" required autocomplete="new-email">
             </div>
           </div>
           <div class="col-lg-12">
             <div class="form-group mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" class="form-textarea" cols="30" rows="10" required autocomplete="new-message" placeholder="Write your interest..."></textarea>
+              <textarea id="message" [(ngModel)]="blogReviewParam.message" name="message" class="form-textarea" cols="30" rows="10" required autocomplete="new-message" placeholder="Write your interest..."></textarea>
             </div>
           </div>
           <div class="col-lg-12">
@@ -108,6 +108,64 @@
             </button>
           </div>
         </form>
+        <hr class="w-100 my-5">
+        <div class="mt-3 fw-medium fs-5">
+          3 COMMENTS ON PRAISING PAIN WAS BORN AND I WILL GIVE
+        </div>
+        <div class="py-4 d-flex align-items-start justify-content-start border-bottom">
+          <div>
+            <div class="width-65 height-65 d-flex justify-content-center align-items-center bg-secondary-subtle rounded-3 fw-bold">
+              MB
+            </div>
+          </div>
+          <div class="ms-3">
+            <div class="mb-1 fw-medium fs-5"> Mistaken </div>
+            <div class="mb-2 text-secondary mb-2 small"> August 10, 2022 at 11:09 am </div>
+            <div class="mb-2 text-secondary">
+              mistaken explain to you how all this mistaken idea of denouncing pleas
+              praising pain born and I will give you a complete account of the system
+            </div>
+            <button type="button" class="btn btn-outline-theme py-2 width-96 fw-medium rounded-pill">
+              REPLY
+            </button>
+          </div>
+        </div>
+        <div class="py-4 d-flex align-items-start justify-content-start border-bottom">
+          <div>
+            <div class="width-65 height-65 d-flex justify-content-center align-items-center bg-secondary-subtle rounded-3 fw-bold">
+              JS
+            </div>
+          </div>
+          <div class="ms-3">
+            <div class="mb-1 fw-medium fs-5"> Mistaken </div>
+            <div class="mb-2 text-secondary mb-2 small"> August 10, 2022 at 11:09 am </div>
+            <div class="mb-2 text-secondary">
+              mistaken explain to you how all this mistaken idea of denouncing pleas
+              praising pain born and I will give you a complete account of the system
+            </div>
+            <button type="button" class="btn btn-outline-theme py-2 width-96 fw-medium rounded-pill">
+              REPLY
+            </button>
+          </div>
+        </div>
+        <div class="py-4 d-flex align-items-start justify-content-start border-bottom">
+          <div>
+            <div class="width-65 height-65 d-flex justify-content-center align-items-center bg-secondary-subtle rounded-3 fw-bold">
+              IS
+            </div>
+          </div>
+          <div class="ms-3">
+            <div class="mb-1 fw-medium fs-5"> Mistaken </div>
+            <div class="mb-2 text-secondary mb-2 small"> August 10, 2022 at 11:09 am </div>
+            <div class="mb-2 text-secondary">
+              mistaken explain to you how all this mistaken idea of denouncing pleas
+              praising pain born and I will give you a complete account of the system
+            </div>
+            <button type="button" class="btn btn-outline-theme py-2 width-96 fw-medium rounded-pill">
+              REPLY
+            </button>
+          </div>
+        </div>
       </div>
       <div class="col-lg-4">
         <div class="sticky-top z-0" style="top: 90px;">

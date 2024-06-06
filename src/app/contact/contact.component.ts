@@ -24,7 +24,7 @@ export class ContactComponent {
   }
 
   contactForm(event: any) {
-    console.log(event.target)
+    console.log(this.contactParam)
   }
 
 }

@@ -19,3 +19,23 @@
     </div>
   </div>
 </section>
+
+<!-- Forget -->
+<section class="py-5 w-100">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <form (submit)="forgetForm($event)" class="p-4 border">
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" type="email" [(ngModel)]="forgetParam.email" name="email" class="form-control" required autocomplete="new-email">
+            <div class="small text-secondary">After enter email check your email</div>
+          </div>
+          <a routerLink="/reset" class="btn btn-outline-gray-theme rounded-0 width-100">
+            Forget
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

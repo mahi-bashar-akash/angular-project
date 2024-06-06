@@ -19,6 +19,7 @@ export class HeaderComponent {
         navbarCollapse.classList.add('show');
       }
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' } );
   }
 
   /* Function to remove ( show ) collapse of header */
@@ -29,6 +30,7 @@ export class HeaderComponent {
         navbarCollapse.classList.remove('show');
       }
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' } );
   }
 
 }

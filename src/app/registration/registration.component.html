@@ -1,7 +1,8 @@
 <!-- Breadcrumb -->
 <section class="py-5 w-100 bg-white">
   <div class="container">
-    <div class="bg-light mb-4 height-300 w-100 d-flex justify-content-center align-items-center flex-column breadcrumb-content">
+    <div
+      class="bg-light mb-4 height-300 w-100 d-flex justify-content-center align-items-center flex-column breadcrumb-content">
       <div class="fs-4 fw-medium text-center mb-2">
         Registration
       </div>
@@ -15,6 +16,47 @@
         <a routerLink="/registration" class="text-decoration-none text-theme mx-1">
           Registration
         </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration -->
+<section class="py-5 w-100">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <form (submit)="registrationForm($event)" class="p-4 border">
+          <div class="form-group mb-3">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input id="full-name" type="text" [(ngModel)]="registrationParam.fullName" name="full-name"
+                   class="form-control" required autocomplete="new-full-name">
+          </div>
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" type="email" [(ngModel)]="registrationParam.email" name="email" class="form-control" required autocomplete="new-email">
+          </div>
+          <div class="form-group mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input id="password" type="password" [(ngModel)]="registrationParam.password" name="password" class="form-control" required autocomplete="new-password">
+          </div>
+          <div class="form-group mb-3">
+            <label for="confirm-password" class="form-label">Confirm Password</label>
+            <input id="confirm-password" type="password" [(ngModel)]="registrationParam.confirmPassword" name="password" class="form-control" required autocomplete="new-confirm-password">
+          </div>
+          <div class="form-group mb-3">
+            <label for="terms-condition" class="form-check-label d-block cursor-pointer">
+              <input type="checkbox" [(ngModel)]="registrationParam.termsConditions" name="terms-condition" id="terms-condition" class="form-checkbox">
+              I agree with
+              <a href="javascript:void(0)" class="text-light-gray-hover">
+                terms & conditions
+              </a>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-outline-gray-theme rounded-0 width-100">
+            Registration
+          </button>
+        </form>
       </div>
     </div>
   </div>
