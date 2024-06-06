@@ -45,9 +45,11 @@
   <div class="container">
     <div class="row px-1">
       <div class="col-md-6 col-lg-4 p-0">
-        <div class="p-2">
+        <div class="p-2 background-effect">
           <div class="position-relative">
-            <img src="/collection/collection-1.jpg" class="img-fluid object-fit-cover" alt="collection 1">
+            <div class="overflow-hidden">
+              <img src="/collection/collection-1.jpg" class="img-fluid object-fit-cover scale-effect" alt="collection 1">
+            </div>
             <div class="position-absolute bottom-0 start-0 p-4">
               <div class="fs-5 fw-bold mb-2">
                 For Men <br> Clothing Originals
@@ -60,9 +62,11 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-4 p-0">
-        <div class="p-2">
+        <div class="p-2 background-effect">
           <div class="position-relative">
-            <img src="/collection/collection-2.jpg" class="img-fluid object-fit-cover" alt="collection 2">
+            <div class="overflow-hidden">
+              <img src="/collection/collection-2.jpg" class="img-fluid object-fit-cover scale-effect" alt="collection 2">
+            </div>
             <div class="position-absolute bottom-0 start-0 p-4">
               <div class="fs-5 fw-bold mb-2">
                 For Women <br> Summer Collection
@@ -75,9 +79,11 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-4 p-0">
-        <div class="p-2">
+        <div class="p-2 background-effect">
           <div class="position-relative">
-            <img src="/collection/collection-3.jpg" class="img-fluid object-fit-cover" alt="collection 3">
+            <div class="overflow-hidden">
+              <img src="/collection/collection-3.jpg" class="img-fluid object-fit-cover scale-effect" alt="collection 3">
+            </div>
             <div class="position-absolute bottom-0 start-0 p-4">
               <div class="fs-5 fw-bold mb-2">
                 Accessories <br> Handbag Collection
@@ -317,7 +323,9 @@
         <div class="px-3">
           <div class="mb-3">
             <div class="position-relative">
-              <img [src]="item.blogImage" class="img-fluid object-fit-cover w-100 height-250" alt="blog 1">
+            <div class="overflow-hidden background-effect">
+              <img [src]="item.blogImage" class="img-fluid object-fit-cover w-100 height-250 scale-effect" alt="blog 1">
+            </div>
               <div class="position-absolute top-0 end-0 p-3">
                 <div class="bg-white shadow font-size-18 text-center px-3 py-2 h-auto">
                   AUG <br> 05

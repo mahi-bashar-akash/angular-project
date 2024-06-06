@@ -1,17 +1,21 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { BlogComponent } from './blog/blog.component';
-import { SingleBlogComponent } from './single-blog/single-blog.component';
-import { ShopComponent } from './shop/shop.component';
-import { SingleProductComponent } from './single-product/single-product.component';
-import { LoginComponent } from "./login/login.component";
-import { RegistrationComponent } from "./registration/registration.component";
-import { ForgetComponent } from "./forget/forget.component";
-import { ResetComponent } from "./reset/reset.component";
-import { CartComponent } from "./cart/cart.component";
-import { WishlistComponent } from "./wishlist/wishlist.component";
+
+// user portal
+import { HomeComponent } from './user/home/home.component';
+import { AboutComponent } from './user/about/about.component';
+import { ContactComponent } from './user/contact/contact.component';
+import { BlogComponent } from './user/blog/blog.component';
+import { SingleBlogComponent } from './user/single-blog/single-blog.component';
+import { ShopComponent } from './user/shop/shop.component';
+import { SingleProductComponent } from './user/single-product/single-product.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegistrationComponent } from './user/registration/registration.component';
+import { ForgetComponent } from './user/forget/forget.component';
+import { ResetComponent } from './user/reset/reset.component';
+import { CartComponent } from './user/cart/cart.component';
+import { WishlistComponent } from './user/wishlist/wishlist.component';
+
+// admin portal
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
