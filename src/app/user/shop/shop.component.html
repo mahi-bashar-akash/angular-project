@@ -100,7 +100,150 @@
 
       <div class="col-lg-4">
 
-        <app-side-content-product/>
+        <form class="mb-3">
+          <div class="position-relative">
+            <input type="text" name="keyword" class="form-control ps-5" required autocomplete="new-keyword"
+                   placeholder="Search here anything">
+            <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+              <i class="bi bi-search text-light-gray"></i>
+            </div>
+          </div>
+        </form>
+
+        <div class="border bg-white px-3 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Price range</div>
+          <div class="row">
+            <div class="col-6 p-3">
+              <input type="text" name="min-price" class="form-control" required autocomplete="new-min-price" value="0"
+                     min="0">
+            </div>
+            <div class="col-6 p-3">
+              <input type="text" name="max-price" class="form-control" required autocomplete="new-max-price"
+                     value="100000" max="100000">
+            </div>
+          </div>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Availability</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            In Stock
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            Out of Stock
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            Coming Soon
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Categories</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Male </span> <span> (02) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Female </span> <span> (05) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Children </span> <span> (10) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Accessories </span> <span> (03) </span>
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Subcategories</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Shirt </span> <span> (02) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Pant </span> <span> (05) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> T-shirt </span> <span> (10) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Coat </span> <span> (03) </span>
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 pb-2 mb-3">
+          <div class="fs-5 fw-medium mt-3"> Color</div>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Red </span> <span> (02) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Blue </span> <span> (05) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Green </span> <span> (10) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Yellow </span> <span> (03) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> White </span> <span> (03) </span>
+          </label>
+          <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+            <span> Black </span> <span> (03) </span>
+          </label>
+        </div>
+
+        <div class="border bg-white px-4 mb-3">
+          <div class="fs-5 fw-medium my-3"> Size</div>
+          <div class="mb-3">
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> L </span> <span> (03) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> M </span> <span> (07) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> S </span> <span> (12) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> XL </span> <span> (09) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> XS </span> <span> (02) </span>
+            </label>
+            <label class="cursor-pointer text-light-gray-hover d-flex justify-content-between align-items-center my-3">
+              <span> XXL </span> <span> (08) </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="border bg-white px-4 mb-3">
+          <div class="fs-5 fw-medium my-3"> Tags</div>
+          <div class="mb-3">
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Shirt
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Pant
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              T-shirt
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Coat
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Accessories
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Male
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Female
+            </label>
+            <label class="btn btn-outline-gray-theme rounded-0 mb-1 me-1">
+              Kid's
+            </label>
+          </div>
+        </div>
 
       </div>
     </div>

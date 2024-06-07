@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import {RouterModule} from '@angular/router';
 import { CommonModule} from "@angular/common";
-import { SideContentProductComponent } from '../side-content-product/side-content-product.component';
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [RouterModule, CommonModule, SideContentProductComponent],
+  imports: [RouterModule, CommonModule],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss'
 })
