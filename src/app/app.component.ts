@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './user/header/header.component';
-import { FooterComponent } from './user/footer/footer.component';
+import { NgIf } from '@angular/common';
+import { FrontLayoutComponent } from "./user/layout/layout.component";
+import { AdminLayoutComponent } from "./admin/layout/layout.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, RouterModule, RouterOutlet],
+  imports: [NgIf, RouterModule, RouterOutlet, FrontLayoutComponent, AdminLayoutComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

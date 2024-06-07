@@ -1,10 +1,117 @@
-<section class="container">
-  <div class="row">
-    <div class="col-lg-3">
-
-    </div>
-    <div class="col-lg-9">
-
+<section class="w-100 py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="p-4 shadow h-100">
+          <div class="fs-5 fw-bold mb-3">
+            Profile Details
+          </div>
+          <div class="d-block mb-3 fw-bold">
+            Full Name
+          </div>
+          <div class="d-block mb-3 fw-medium text-secondary ms-3">
+            {{name}}
+          </div>
+          <div class="d-block mb-3 fw-bold">
+            Email
+          </div>
+          <div class="d-block mb-3 fw-medium text-secondary ms-3">
+            {{email}}
+          </div>
+          <div class="d-block mb-3 fw-bold">
+            Phone Number
+          </div>
+          <div class="d-block mb-3 fw-medium text-secondary ms-3">
+            {{phoneNumber}}
+          </div>
+          <div class="d-block mb-3 fw-bold">
+            Present Address
+          </div>
+          <div class="d-block mb-3 fw-medium text-secondary ms-3">
+            {{PresentAddress}}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <form (ngSubmit)="updateProfile($event)" class="p-4 shadow h-100">
+          <div class="fs-5 fw-bold mb-3">
+            Edit Profile
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              Full Name
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="text" [(ngModel)]="profileParam.name" name="full-name" class="form-control" required autocomplete="new-full-name">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              Email
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="email" [(ngModel)]="profileParam.email" name="email" class="form-control" required autocomplete="new-email">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              Phone Number
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="text" [(ngModel)]="profileParam.phoneNumber" name="phone-number" class="form-control" required autocomplete="new-phone-number">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              Present Address
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="text" [(ngModel)]="profileParam.presentAddress" name="present-address" class="form-control" required autocomplete="new-present-address">
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-outline-gray-theme width-120 rounded-0">
+              UPDATE
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-4">
+        <form (ngSubmit)="updatePassword($event)" class="p-4 shadow h-100">
+          <div class="fs-5 fw-bold mb-3">
+            Change Password
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              Old Password
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="password" [(ngModel)]="passwordParam.oldPassword" name="old-password" class="form-control" required autocomplete="new-old-password">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              New Password
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="password" [(ngModel)]="passwordParam.newPassword" name="new-password" class="form-control" required autocomplete="new-password">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label d-block fw-bold">
+              Confirm Password
+            </label>
+            <div class="d-block mb-3 fw-medium text-secondary">
+              <input type="password" [(ngModel)]="passwordParam.confirmPassword" name="confirm-password" class="form-control" required autocomplete="new-confirm-password">
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-outline-gray-theme width-120 rounded-0">
+              UPDATE
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
