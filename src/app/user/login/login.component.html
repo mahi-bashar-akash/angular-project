@@ -26,7 +26,7 @@
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
-        <form (submit)="loginForm($event)" class="p-4 border">
+        <form (ngSubmit)="loginForm($event)" class="p-4 border">
           <div class="form-group mb-3">
             <label for="email" class="form-label">Email</label>
             <input id="email" type="email" [(ngModel)]="loginParam.email" name="email" class="form-control" required autocomplete="new-email">
