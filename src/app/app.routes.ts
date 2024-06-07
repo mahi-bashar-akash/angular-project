@@ -34,6 +34,7 @@ import { AdminLayoutComponent } from "./admin/layout/layout.component";
 export const routes: Routes = [
 
   // frontend route
+
   { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '', component: FrontLayoutComponent,
       children: [
@@ -50,16 +51,19 @@ export const routes: Routes = [
         { path: 'reset', component: ResetComponent },
         { path: 'cart', component: CartComponent },
         { path: 'wishlist', component: WishlistComponent },
+
           // user profile route
           { path: 'profile', redirectTo: '/details', pathMatch: 'full' },
           { path: 'profile/details', component: ProfileComponent },
           { path: 'profile/wishlist-history', component: ProfileWishlistComponent },
           { path: 'profile/order-history', component: ProfileOrderHistoryComponent },
           { path: 'profile/settings', component: ProfileSettingsComponent },
+
       ]
     },
 
   // admin route
+
   { path: 'admin', redirectTo: 'admin/dashboard', pathMatch: 'full' },
     { path: 'admin', component: AdminLayoutComponent,
       children: [
