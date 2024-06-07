@@ -8,6 +8,25 @@ import { RouterModule } from '@angular/router';
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
+
 export class AdminLayoutComponent {
+
+  openSidebar() {
+    if(window.innerWidth <= 576) {
+      let sidebar = document.querySelector('.admin-sidebar');
+      if(sidebar) {
+        sidebar.classList.add('active')
+      }
+    }
+  }
+
+  closeSidebar() {
+    if(window.innerWidth <= 576) {
+      let sidebar = document.querySelector('.admin-sidebar');
+      if(sidebar) {
+        sidebar.classList.remove('active')
+      }
+    }
+  }
 
 }

@@ -1,55 +1,71 @@
 <div class="admin-wrapper">
   <div class="admin-sidebar">
     <div class="admin-sidebar-header">
-      <a routerLink="/admin/dashboard" routerLinkActive="active" class="admin-sidebar-header-logo">
-        <img src="/logo.webp" class="width-100" alt="logo">
+      <a routerLink="/admin/dashboard">
+        <img src="/logo.webp" class="width-100 admin-sidebar-header-logo-no-responsive" alt="logo">
+        <img src="/logo.png" class="width-35 admin-sidebar-header-logo-responsive" alt="logo">
       </a>
-      <button type="button" class="btn btn-none admin-sidebar-close">
+      <button type="button" class="btn btn-none admin-sidebar-close" (click)="closeSidebar()">
         <i class="bi bi-x-circle"></i>
       </button>
     </div>
-    <div class="admin-sidebar-body">
-      <a routerLink="/admin/dashboard" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-speedometer"></i> Dashboard
+    <div class="admin-sidebar-body scrollbar">
+      <a routerLink="/admin/dashboard" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-speedometer"></i>
+        <span> Dashboard </span>
       </a>
-      <a routerLink="/admin/calendar" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-calendar"></i> Calendar
+      <a routerLink="/admin/calendar" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-calendar"></i>
+        <span> Calendar </span>
       </a>
-      <a routerLink="/admin/email" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-envelope"></i> Email
+      <a routerLink="/admin/email" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-envelope"></i>
+        <span>  Email </span>
       </a>
-      <a routerLink="/admin/chat" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-chat"></i> Chat
+      <a routerLink="/admin/chat" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-chat"></i>
+        <span> Chat </span>
       </a>
-      <a routerLink="/admin/slider" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-sliders"></i> Slider
+      <a routerLink="/admin/slider" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-sliders"></i>
+        <span> Slider </span>
       </a>
-      <a routerLink="/admin/box" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-boxes"></i> Box
+      <a routerLink="/admin/box" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-boxes"></i>
+        <span> Box </span>
       </a>
-      <a routerLink="/admin/product" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-bag"></i> Product
+      <a routerLink="/admin/product" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-bag"></i>
+        <span> Product </span>
       </a>
-      <a routerLink="/admin/invoice" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-receipt"></i> Invoice
+      <a routerLink="/admin/invoice" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-receipt"></i>
+        <span> Invoice </span>
       </a>
-      <a routerLink="/admin/user" routerLinkActive="active" class="admin-sidebar-body-link">
-        <i class="admin-sidebar-icon bi bi-people"></i> User
+      <a routerLink="/admin/user" routerLinkActive="active" class="admin-sidebar-body-link" (click)="closeSidebar()">
+        <i class="admin-sidebar-icon bi bi-people"></i>
+        <span> User </span>
       </a>
     </div>
     <div class="admin-sidebar-footer">
-      <a href="javascript:void(0)" class="admin-sidebar-footer-link">
-        <i class="admin-sidebar-icon bi bi-box-arrow-in-right"></i> Logout
-      </a>
+      <button type="button" class="admin-sidebar-footer-link">
+        <i class="admin-sidebar-icon bi bi-box-arrow-in-right"></i>
+        <span> Logout </span>
+      </button>
     </div>
   </div>
   <div class="admin-content">
     <div class="admin-content-header">
       <div class="d-flex justify-content-start align-items-center">
-        <button type="button" class="btn btn-none me-2">
-          <i class="admin-sidebar-icon bi bi-justify-left"></i>
+        <button type="button" class="btn btn-none sidebar-toggle me-2" (click)="openSidebar()">
+          <i class="bi bi-justify-left"></i>
         </button>
-        <div class="position-relative">
+        <div class="d-inline d-md-none">
+          <button type="button" class="btn btn-none">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <div class="position-relative d-none d-md-inline">
           <input type="text" name="keyword" class="form-control width-300 ps-5" placeholder="Search here anything" required autocomplete="new-keyword">
           <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
             <i class="bi bi-search"></i>
@@ -76,7 +92,7 @@
       </div>
 
     </div>
-    <div class="admin-content-body">
+    <div class="admin-content-body scrollbar">
 
       <!-- *-*-* Start outlet *-*-* -->
       <router-outlet/>
