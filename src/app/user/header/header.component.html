@@ -1,3 +1,76 @@
+<!-- top header -->
+<header class="w-100 bg-light position-relative py-3">
+  <div class="container">
+    <div class="row fw-bold">
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="pe-3 py-2 font-size-14">
+          Welcome: <span class="text-theme ms-2"> HONGO </span>
+        </div>
+        <div class="px-3 py-2 font-size-14 d-flex align-items-center justify-content-center">
+          <div class="me-2"> Currency: </div>
+
+          <button class="btn border-0 p-0 dropdown">
+            <a class="nav-link font-size-14 text-theme fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dollar
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  Dollar
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  Euro
+                </a>
+              </li>
+            </ul>
+          </button>
+        </div>
+        <div class="px-3 py-2 font-size-14 d-flex align-items-center justify-content-center">
+          <div class="me-2"> Language: </div>
+
+          <button class="btn border-0 p-0 dropdown">
+            <a class="nav-link font-size-14 text-theme fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              English
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  English
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  French
+                </a>
+              </li>
+            </ul>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-end align-items-center">
+        <div class="mx-3">
+          <a href="javascript:void(0)" class="text-decoration-none text-secondary">
+            Terms & conditions
+          </a>
+        </div>
+        <div class="mx-3">
+          <a href="javascript:void(0)" class="text-decoration-none text-secondary">
+            Privacy & policy
+          </a>
+        </div>
+        <div class="mx-3">
+          <a href="javascript:void(0)" class="text-decoration-none text-secondary">
+            Return & refund
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- bottom header -->
 <header class="header sticky-top">
   <nav class="navbar navbar-expand-lg bg-light height-70">
     <div class="container">
@@ -40,66 +113,49 @@
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/login" (click)="hideCollapse()">
-              Sign In
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/registration" (click)="hideCollapse()">
-              Registration
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" routerLink="/cart" routerLinkActive="active" (click)="hideCollapse()">
               Cart (03)
             </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Currency
+              Profile
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
               <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  <i class="bi bi-currency-euro me-1"></i> Euro
+                <a class="dropdown-item" routerLink="/login" (click)="hideCollapse()">
+                  Sign In
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  <i class="bi bi-currency-pound me-1"></i> Pound Sterling
+                <a class="dropdown-item" routerLink="/registration" (click)="hideCollapse()">
+                  Registration
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  <i class="bi bi-currency-dollar me-1"></i> US Doller
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Language
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  English
+                <a class="dropdown-item" routerLink="/profile/details" (click)="hideCollapse()">
+                  Details
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  Bangla
+                <a class="dropdown-item" routerLink="/profile/wishlist-history" (click)="hideCollapse()">
+                  Wishlist
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  Arabic
+                <a class="dropdown-item" routerLink="/profile/order-history" (click)="hideCollapse()">
+                  Order History
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0)">
-                  French
+                <a class="dropdown-item" routerLink="/profile/settings" (click)="hideCollapse()">
+                  Settings
                 </a>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button" (click)="hideCollapse()">
+                  Logout
+                </button>
               </li>
             </ul>
           </li>

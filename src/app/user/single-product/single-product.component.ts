@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { FormsModule } from "@angular/forms";
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { SideContentProductComponent } from '../side-content-product/side-content-product.component';
 @Component({
   selector: 'app-single-product',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, FormsModule, RouterModule, SideContentProductComponent],
   templateUrl: './single-product.component.html',
   styleUrl: './single-product.component.scss'
 })

@@ -14,6 +14,10 @@ import { ForgetComponent } from './user/forget/forget.component';
 import { ResetComponent } from './user/reset/reset.component';
 import { CartComponent } from './user/cart/cart.component';
 import { WishlistComponent } from './user/wishlist/wishlist.component';
+import { ProfileComponent } from './user/profile/profile.component';
+import { ProfileWishlistComponent } from './user/profile-wishlist/profile-wishlist.component';
+import { ProfileOrderHistoryComponent } from './user/profile-order-history/profile-order-history.component';
+import { ProfileSettingsComponent } from './user/profile-settings/profile-settings.component';
 
 // admin portal
 
@@ -32,4 +36,8 @@ export const routes: Routes = [
   { path: 'reset', component: ResetComponent },
   { path: 'cart', component: CartComponent },
   { path: 'wishlist', component: WishlistComponent },
+    { path: 'profile/details', component: ProfileComponent },
+    { path: 'profile/wishlist-history', component: ProfileWishlistComponent },
+    { path: 'profile/order-history', component: ProfileOrderHistoryComponent },
+    { path: 'profile/settings', component: ProfileSettingsComponent },
 ];
