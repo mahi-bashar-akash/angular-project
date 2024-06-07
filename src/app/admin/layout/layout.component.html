@@ -1,3 +1,87 @@
-<!--*-*-*-*-*-*-*-*-*-*-* Start outlet *-*-*-*-*-*-*-*-*-*-*-->
-<router-outlet/>
-<!--*-*-*-*-*-*-*-*-*-*-* End outlet *-*-*-*-*-*-*-*-*-*-*-*-->
+<div class="admin-wrapper">
+  <div class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <a routerLink="/admin/dashboard" routerLinkActive="active" class="admin-sidebar-header-logo">
+        <img src="/logo.webp" class="width-100" alt="logo">
+      </a>
+      <button type="button" class="btn btn-none admin-sidebar-close">
+        <i class="bi bi-x-circle"></i>
+      </button>
+    </div>
+    <div class="admin-sidebar-body">
+      <a routerLink="/admin/dashboard" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-speedometer"></i> Dashboard
+      </a>
+      <a routerLink="/admin/calendar" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-calendar"></i> Calendar
+      </a>
+      <a routerLink="/admin/email" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-envelope"></i> Email
+      </a>
+      <a routerLink="/admin/chat" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-chat"></i> Chat
+      </a>
+      <a routerLink="/admin/slider" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-sliders"></i> Slider
+      </a>
+      <a routerLink="/admin/box" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-boxes"></i> Box
+      </a>
+      <a routerLink="/admin/product" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-bag"></i> Product
+      </a>
+      <a routerLink="/admin/invoice" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-receipt"></i> Invoice
+      </a>
+      <a routerLink="/admin/user" routerLinkActive="active" class="admin-sidebar-body-link">
+        <i class="admin-sidebar-icon bi bi-people"></i> User
+      </a>
+    </div>
+    <div class="admin-sidebar-footer">
+      <a href="javascript:void(0)" class="admin-sidebar-footer-link">
+        <i class="admin-sidebar-icon bi bi-box-arrow-in-right"></i> Logout
+      </a>
+    </div>
+  </div>
+  <div class="admin-content">
+    <div class="admin-content-header">
+      <div class="d-flex justify-content-start align-items-center">
+        <button type="button" class="btn btn-none me-2">
+          <i class="admin-sidebar-icon bi bi-justify-left"></i>
+        </button>
+        <div class="position-relative">
+          <input type="text" name="keyword" class="form-control width-300 ps-5" placeholder="Search here anything" required autocomplete="new-keyword">
+          <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="/avatar/testimonial-avatar.webp" class="width-45 height-45 rounded-circle" alt="avatar">
+        </div>
+        <ul class="dropdown-menu dropdown-menu-end mt-2">
+          <li class="mb-2">
+            <a routerLink="/admin/profile" routerLinkActive="active" class="dropdown-item">
+              Profile
+            </a>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item">
+              Logout
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="admin-content-body">
+
+      <!-- *-*-* Start outlet *-*-* -->
+      <router-outlet/>
+      <!-- *-*-* End outlet *-*-* -->
+
+    </div>
+  </div>
+</div>
