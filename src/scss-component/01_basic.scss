@@ -111,6 +111,45 @@
 
 }
 
+.admin-pagination {
+
+  .page-item {
+    transition: 0.3s all ease-in-out;
+
+    &.active .page-link {
+      transition: 0.3s all ease-in-out;
+      background-color: var(--bs-white) !important;
+      border: 1px solid transparent !important;
+      color: var(--theme) !important;
+    }
+
+    .page-link {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--light-gray) !important;
+      border: 1px solid transparent !important;
+      margin: 0 5px;
+      border-radius: 0 !important;
+      font-size: 12px;
+      box-shadow: 0 0 0 0 !important;
+      background-color: var(--bs-white) !important;
+
+      &:hover, &:focus, &:active {
+        transition: 0.3s all ease-in-out;
+        background-color: var(--bs-white) !important;
+        border: 1px solid transparent !important;
+        color: var(--theme) !important;
+      }
+
+    }
+
+  }
+
+}
+
 /* Breadcrumb *-*-*-* global uses */
 
 .breadcrumb-content {
