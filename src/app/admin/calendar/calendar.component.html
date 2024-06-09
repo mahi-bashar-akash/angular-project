@@ -26,49 +26,49 @@
     <div class="row px-3">
       <div class="col-lg-3 px-2">
         <div class="p-4 w-100 border bg-white height-calc-170 scrollbar">
-            <div class="mb-3 w-100">
-              <button type="button" class="btn btn-theme w-100 rounded-2" (click)="openEventModal()">
-                Event
-              </button>
+          <div class="mb-3 w-100">
+            <button type="button" class="btn btn-theme w-100 rounded-2" (click)="openEventModal()">
+              Event
+            </button>
+          </div>
+          <div class="w-100">
+            <div class="mb-3">
+              <label for="view-all" class="form-label d-block cursor-pointer">
+                <input id="view-all" type="radio" class="form-radio" name="event" checked>
+                <span class="ms-1"> View all </span>
+              </label>
             </div>
-            <div class="w-100">
-              <div class="mb-3">
-                <label for="view-all" class="form-label d-block cursor-pointer">
-                  <input id="view-all" type="radio" class="form-radio" name="event" checked>
-                  <span class="ms-1"> View all </span>
-                </label>
-              </div>
-              <div class="mb-3">
-                <label for="personal" class="form-label d-block cursor-pointer">
-                  <input id="personal" type="radio" class="form-radio" name="event">
-                  <span class="ms-1"> Personal </span>
-                </label>
-              </div>
-              <div class="mb-3">
-                <label for="business" class="form-label d-block cursor-pointer">
-                  <input id="business" type="radio" class="form-radio" name="event">
-                  <span class="ms-1"> Business </span>
-                </label>
-              </div>
-              <div class="mb-3">
-                <label for="family" class="form-label d-block cursor-pointer">
-                  <input id="family" type="radio" class="form-radio" name="event">
-                  <span class="ms-1"> Family </span>
-                </label>
-              </div>
-              <div class="mb-3">
-                <label for="holiday" class="form-label d-block cursor-pointer">
-                  <input id="holiday" type="radio" class="form-radio" name="event">
-                  <span class="ms-1"> Holiday </span>
-                </label>
-              </div>
-              <div class="mb-3">
-                <label for="etc" class="form-label d-block cursor-pointer">
-                  <input id="etc" type="radio" class="form-radio" name="event">
-                  <span class="ms-1"> ETC </span>
-                </label>
-              </div>
+            <div class="mb-3">
+              <label for="personal" class="form-label d-block cursor-pointer">
+                <input id="personal" type="radio" class="form-radio" name="event">
+                <span class="ms-1"> Personal </span>
+              </label>
             </div>
+            <div class="mb-3">
+              <label for="business" class="form-label d-block cursor-pointer">
+                <input id="business" type="radio" class="form-radio" name="event">
+                <span class="ms-1"> Business </span>
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="family" class="form-label d-block cursor-pointer">
+                <input id="family" type="radio" class="form-radio" name="event">
+                <span class="ms-1"> Family </span>
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="holiday" class="form-label d-block cursor-pointer">
+                <input id="holiday" type="radio" class="form-radio" name="event">
+                <span class="ms-1"> Holiday </span>
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="etc" class="form-label d-block cursor-pointer">
+                <input id="etc" type="radio" class="form-radio" name="event">
+                <span class="ms-1"> ETC </span>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-9">
@@ -84,49 +84,12 @@
                 Personal
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Business
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Family
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Holiday
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
               </div>
@@ -138,52 +101,15 @@
             </div>
             <div class="row border-bottom fw-medium p-2">
               <div class="col-7">
-                Personal
+                Business
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                 Business
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Family
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Holiday
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
               </div>
@@ -195,52 +121,15 @@
             </div>
             <div class="row border-bottom fw-medium p-2">
               <div class="col-7">
-                Personal
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Business
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
                 Family
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Holiday
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
               </div>
@@ -252,59 +141,22 @@
             </div>
             <div class="row border-bottom fw-medium p-2">
               <div class="col-7">
-                Personal
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Business
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Family
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
                 Holiday
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
               </div>
             </div>
             <div class="row border-bottom fw-bold p-2">
               <div class="col-12">
-                11, Jan, 1999
+                01, Jan, 1999
               </div>
             </div>
             <div class="row border-bottom fw-medium p-2">
@@ -312,69 +164,19 @@
                 Personal
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Business
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Family
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Holiday
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
               </div>
             </div>
             <div class="row border-bottom fw-bold p-2">
               <div class="col-12">
-                15, Jan, 1999
-              </div>
-            </div>
-            <div class="row border-bottom fw-medium p-2">
-              <div class="col-7">
-                Personal
-              </div>
-              <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
-                  <i class="bi bi-trash"></i>
-                </a>
+                03, Jan, 1999
               </div>
             </div>
             <div class="row border-bottom fw-medium p-2">
@@ -382,12 +184,19 @@
                 Business
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                05, Jan, 1999
               </div>
             </div>
             <div class="row border-bottom fw-medium p-2">
@@ -395,12 +204,19 @@
                 Family
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                07, Jan, 1999
               </div>
             </div>
             <div class="row border-bottom fw-medium p-2">
@@ -408,10 +224,172 @@
                 Holiday
               </div>
               <div class="col-5 text-end">
-                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2" (click)="openEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
                   <i class="bi bi-pencil-square"></i>
                 </a>
-                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2" (click)="openDeleteEventModal()">
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                01, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Personal
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                03, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Business
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                05, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Family
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                07, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Holiday
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                01, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Personal
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                03, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Business
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                05, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Family
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border-bottom fw-bold p-2">
+              <div class="col-12">
+                07, Jan, 1999
+              </div>
+            </div>
+            <div class="row border-bottom fw-medium p-2">
+              <div class="col-7">
+                Holiday
+              </div>
+              <div class="col-5 text-end">
+                <a href="javascript:void(0)" class="text-decoration-none text-secondary mx-2"
+                   (click)="openEventModal()">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="javascript:void(0)" class="text-decoration-none text-danger mx-2"
+                   (click)="openDeleteEventModal()">
                   <i class="bi bi-trash"></i>
                 </a>
               </div>
@@ -421,7 +399,7 @@
 
         <div class="height-50 d-flex justify-content-between align-items-center">
           <div class="px-2 fw-bold">
-            91 – 100 of 100
+            20 / 1 of 100
           </div>
           <nav aria-label="Page navigation example" class="admin-pagination">
             <ul class="pagination justify-content-end mb-0">
@@ -460,7 +438,7 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="manageEventModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="eventModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content p-3 border-0">
       <div class="modal-header border-0">
@@ -474,7 +452,8 @@
           <div class="col-md-6">
             <div class="form-group mb-3">
               <label for="event-name" class="form-label">Name</label>
-              <input type="text" name="event-name" id="event-name" class="form-control" required autocomplete="new-event-name">
+              <input type="text" name="event-name" id="event-name" class="form-control" required
+                     autocomplete="new-event-name">
             </div>
           </div>
           <div class="col-md-6">
@@ -492,37 +471,43 @@
           <div class="col-md-6">
             <div class="form-group mb-3">
               <label for="event-start-date" class="form-label">Start Date</label>
-              <input type="text" name="event-start-date" id="event-start-date" class="form-control" required autocomplete="new-event-start-date">
+              <input type="text" name="event-start-date" id="event-start-date" class="form-control" required
+                     autocomplete="new-event-start-date">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group mb-3">
               <label for="event-end-date" class="form-label">End Date</label>
-              <input type="text" name="event-end-date" id="event-end-date" class="form-control" required autocomplete="new-event-end-date">
+              <input type="text" name="event-end-date" id="event-end-date" class="form-control" required
+                     autocomplete="new-event-end-date">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group mb-3">
               <label for="event-url" class="form-label">Event Url</label>
-              <input type="text" name="event-url" id="event-url" class="form-control" required autocomplete="new-event-url">
+              <input type="text" name="event-url" id="event-url" class="form-control" required
+                     autocomplete="new-event-url">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group mb-3">
               <label for="event-guest" class="form-label">Event Guest</label>
-              <input type="text" name="event-guest" id="event-guest" class="form-control" required autocomplete="new-event-guest">
+              <input type="text" name="event-guest" id="event-guest" class="form-control" required
+                     autocomplete="new-event-guest">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group mb-3">
               <label for="event-location" class="form-label">Event Location</label>
-              <input type="text" name="event-location" id="event-location" class="form-control" required autocomplete="new-event-location">
+              <input type="text" name="event-location" id="event-location" class="form-control" required
+                     autocomplete="new-event-location">
             </div>
           </div>
           <div class="col-md-12">
             <div class="form-group mb-3">
               <label for="event-description" class="form-label">Event Description</label>
-              <textarea name="event-description" class="form-textarea" id="event-description" cols="30" rows="5" required autocomplete="new-event-description"></textarea>
+              <textarea name="event-description" class="form-textarea" id="event-description" cols="30" rows="5"
+                        required autocomplete="new-event-description"></textarea>
             </div>
           </div>
         </div>
@@ -550,19 +535,15 @@
         <button type="button" class="btn-close shadow-none" (click)="closeDeleteEventModal()"></button>
       </div>
       <div class="modal-body border-0">
-        <div class="fs-4 text-center"> Are you confirm to delete this event? </div>
+        <div class="fs-4 text-center"> Are you confirm to delete this event?</div>
       </div>
-      <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
-        <div class="col-6">
-          <button type="button" class="btn btn-secondary w-100" (click)="closeDeleteEventModal()">
-            Close
-          </button>
-        </div>
-        <div class="col-6">
-          <button type="button" class="btn btn-theme w-100">
-            Save
-          </button>
-        </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" (click)="closeDeleteEventModal()">
+          Close
+        </button>
+        <button type="button" class="btn btn-theme">
+          Save
+        </button>
       </div>
     </div>
   </div>

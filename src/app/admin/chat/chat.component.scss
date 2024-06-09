@@ -1,0 +1,36 @@
+.chat-wrapper {
+  display: flex;
+  box-shadow: 0 0 8px 0 var(--bs-border-color);
+
+  .chat-sidebar {
+    width: 350px;
+    height: calc(100vh - 170px);
+    background-color: var(--bs-white);
+    border-right: 1px solid var(--bs-border-color);
+
+    .chat-sidebar-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      height: 65px;
+      padding: 0 20px;
+    }
+
+    .chat-sidebar-body {
+      width: 100%;
+    }
+
+    .chat-sidebar-footer {
+      width: 100%;
+    }
+
+  }
+
+  .chat-content {
+    width: calc(100% - 350px);
+    height: calc(100vh - 170px);
+    background-color: var(--bs-white);
+  }
+
+}

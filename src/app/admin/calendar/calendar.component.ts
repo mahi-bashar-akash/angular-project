@@ -23,12 +23,12 @@ export class CalendarComponent {
   }
 
   openDeleteEventModal() {
-    const myModal = new bootstrap.Modal("#eventModel", {keyboard: false});
+    const myModal = new bootstrap.Modal("#deleteEventModel", {keyboard: false});
     myModal.show();
   }
 
   closeDeleteEventModal() {
-    let myModalEl = document.getElementById('eventModel');
+    let myModalEl = document.getElementById('deleteEventModel');
     let modal = bootstrap.Modal.getInstance(myModalEl)
     modal.hide();
   }
